@@ -19,6 +19,10 @@ const eyeDiseases = require('./api/diseases');
 const EyeDiseasesService = require('./services/db/EyeDiseasesService');
 const EyeDiseasesValidator = require('./validator/diseases');
 
+//Articles
+const articles = require('./api/articles');
+const ArticlesService = require('./services/db/ArticlesService');
+const ArticleValidator = require('./validator/articles');
 
 //Report Predictions
 const reports = require('./api/reports');
@@ -30,8 +34,8 @@ const init = async () => {
     const usersService = new UsersService();
     const loginService = new LoginService();
     const eyeDiseasesService = new EyeDiseasesService();
+    const articlesService = new ArticlesService();
     const reportsService = new ReportsService();
-
 
     const server = Hapi.server({
         port: process.env.PORT,
@@ -72,7 +76,7 @@ const init = async () => {
             options: {
                 loginService,
                 usersService,
-                tokenManager: GenerateToken,
+                GenerateToken: GenerateToken,
                 validator: LoginValidator,
             },
         },
@@ -88,6 +92,13 @@ const init = async () => {
             options: {
                 service: eyeDiseasesService,
                 validator: EyeDiseasesValidator,
+            },
+        },
+        {
+            plugin: articles,
+            options: {
+                service: articlesService,
+                validator: ArticleValidator,
             },
         },
         {
