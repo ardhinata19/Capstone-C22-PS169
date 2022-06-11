@@ -1,8 +1,7 @@
 const {nanoid} = require('nanoid');
 const {Pool} = require('pg');
-const InvariantException = require('../../exceptions/InvariantException');
-const NotFoundException = require('../../exceptions/NotFoundException');
-// const {mapDiseaseModel} = require('../../map_model');
+const InvariantException = require('../exceptions/InvariantException');
+const NotFoundException = require('../exceptions/NotFoundException');
 
 class ArticlesService {
     constructor() {

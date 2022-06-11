@@ -1,8 +1,7 @@
 const {nanoid} = require('nanoid');
 const {Pool} = require('pg');
-const InvariantException = require('../../exceptions/InvariantException');
-const NotFoundException = require('../../exceptions/NotFoundException');
-const {mapDiseaseModel} = require('../../map_model');
+const InvariantException = require('../exceptions/InvariantException');
+const NotFoundException = require('../exceptions/NotFoundException');
 
 class EyeDiseasesService {
     constructor() {
@@ -38,7 +37,7 @@ class EyeDiseasesService {
 
     async getAllEyeDiseases() {
         const result = await this._pool.query('SELECT id, "title", "description", "imageDiseases", "createdAt", "updatedAt" FROM diseases');
-        return result.rows.map(mapDiseaseModel);
+        return result.rows;
     }
 
     async getEyeDiseaseById(id) {
@@ -48,7 +47,7 @@ class EyeDiseasesService {
             throw new NotFoundException('Disease not found');
         }
 
-        return result.rows.map(mapDiseaseModel)[0];
+        return result.rows[0];
     }
 
     async updateEyeDiseaseById(id, {title, description, imageDiseases}) {

@@ -1,7 +1,7 @@
 {
   "name": "backend-service",
   "version": "1.0.0",
-  "description": "",
+  "description": "Backend service fitid",
   "main": "index.js",
   "scripts": {
     "start-prod": "NODE_ENV=production node ./src/server.js",
@@ -9,13 +9,11 @@
     "migrate": "node-pg-migrate"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ardhi Nata",
   "license": "ISC",
   "dependencies": {
     "@hapi/hapi": "^20.2.2",
     "@hapi/jwt": "^2.1.1",
-    "@tensorflow/tfjs": "^3.18.0",
-    "@tensorflow/tfjs-node": "^3.18.0",
     "bcrypt": "^5.0.1",
     "dotenv": "^16.0.1",
     "jimp": "^0.16.1",
@@ -26,7 +24,6 @@
     "pg": "^8.7.3"
   },
   "devDependencies": {
-    "@google-cloud/storage": "^6.0.1",
     "nodemon": "^2.0.16"
   }
 }

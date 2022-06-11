@@ -1,8 +1,8 @@
 const {nanoid} = require('nanoid');
 const {Pool} = require('pg');
-const InvariantException = require('../../exceptions/InvariantException');
-const NotFoundException = require('../../exceptions/NotFoundException');
-const {mapPredictHistoryModel} = require("../../map_model");
+const InvariantException = require('../exceptions/InvariantException');
+const NotFoundException = require('../exceptions/NotFoundException');
+
 
 
 class ReportPredictService {
@@ -52,7 +52,7 @@ class ReportPredictService {
         if (!result.rows.length) {
             throw new NotFoundException('Prediction report not found');
         }
-        return result.rows.map(mapPredictHistoryModel);
+        return result.rows;
     }
 
     async deleteReportPrediction(id) {
@@ -65,7 +65,7 @@ class ReportPredictService {
         if (!result.rows.length) {
             throw new NotFoundException('Prediction report not found');
         }
-        return result.rows.map(mapPredictHistoryModel);
+        return result.rows;
     }
 }
 

@@ -2,9 +2,9 @@
 const {nanoid} = require('nanoid');
 const {Pool} = require('pg');
 const bcrypt = require('bcrypt');
-const NotAuthenticatedException = require('../../exceptions/NotAuthenticatedException');
-const InvariantException = require('../../exceptions/InvariantException');
-const NotFoundException = require('../../exceptions/NotFoundException');
+const NotAuthenticatedException = require('../exceptions/NotAuthenticatedException');
+const InvariantException = require('../exceptions/InvariantException');
+const NotFoundException = require('../exceptions/NotFoundException');
 
 
 class UsersService {
@@ -29,7 +29,7 @@ class UsersService {
             email,
             username,
             password,
-            imageProfile = 'https://images.app.goo.gl/4m8obc7QRS1ZNSvz6',
+            imageProfile = 'https://storage.googleapis.com/fitid-image/user.png',
         }) {
 
         //verifikasi email dan username baru

@@ -1,6 +1,6 @@
 /* eslint-disable no-underscore-dangle */
 const {Pool} = require('pg');
-const InvariantException = require('../../exceptions/InvariantException');
+const InvariantException = require('../exceptions/InvariantException');
 
 class LoginService {
     constructor() {

@@ -5,28 +5,28 @@ const Jwt = require('@hapi/jwt');
 
 // Users
 const users = require('./api/users');
-const UsersService = require('./services/db/UsersService');
+const UsersService = require('./services/UsersService');
 const UsersValidator = require('./validator/users');
 
 //Auth
 const login = require('./api/login');
-const LoginService = require('./services/db/LoginService');
+const LoginService = require('./services/LoginService');
 const GenerateToken = require('./token/GenerateToken');
 const LoginValidator = require('./validator/login');
 
 //Eye Diseases
 const eyeDiseases = require('./api/diseases');
-const EyeDiseasesService = require('./services/db/EyeDiseasesService');
+const EyeDiseasesService = require('./services/EyeDiseasesService');
 const EyeDiseasesValidator = require('./validator/diseases');
 
 //Articles
 const articles = require('./api/articles');
-const ArticlesService = require('./services/db/ArticlesService');
+const ArticlesService = require('./services/ArticlesService');
 const ArticleValidator = require('./validator/articles');
 
 //Report Predictions
 const reports = require('./api/reports');
-const ReportsService = require('./services/db/ReportPredictService');
+const ReportsService = require('./services/ReportPredictService');
 const ReportValidator = require('./validator/reports');
 
 

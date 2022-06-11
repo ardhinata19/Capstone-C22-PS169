@@ -7,13 +7,13 @@ module.exports = {
     register: async (server, {
         loginService,
         usersService,
-        tokenManager,
+        GenerateToken,
         validator,
     }) => {
         const loginHandler = new LoginHandler(
             loginService,
             usersService,
-            tokenManager,
+            GenerateToken,
             validator,
         );
         server.route(routes(loginHandler));
