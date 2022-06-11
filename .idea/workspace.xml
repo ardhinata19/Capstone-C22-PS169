@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46000796-4350-4283-bf29-e6628e589d74" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,11 +71,11 @@
       <recent name="C:\Bangkit 2022\Capstone Project 2\backend-service\src\services\db" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Bangkit 2022\Cloud_Computing\backend-service\Cloud_Computing\fitid-backend-service" />
       <recent name="C:\Bangkit 2022\Cloud_Computing\backend-service\src\services" />
       <recent name="C:\Bangkit 2022\Cloud_Computing\backend-service\src\services\cloud" />
       <recent name="C:\Bangkit 2022\Capstone Project 2\backend-service\src\services\storage" />
       <recent name="C:\Bangkit 2022\Capstone Project 2\backend-service\src\api\reports" />
-      <recent name="C:\Bangkit 2022\Capstone Project 2\backend-service\src\api" />
     </key>
   </component>
   <component name="RunManager">
@@ -109,7 +110,7 @@
       <workItem from="1654655517302" duration="15049000" />
       <workItem from="1654743940787" duration="16096000" />
       <workItem from="1654776483370" duration="144000" />
-      <workItem from="1654923528487" duration="20294000" />
+      <workItem from="1654923528487" duration="23878000" />
     </task>
     <task id="LOCAL-00001" summary="revisi &amp; deploy ke compute engine">
       <created>1654962359205</created>
@@ -118,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654962359205</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="move all files to Cloud_Computing folder">
+      <created>1654972456750</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1654972456750</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +135,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="revisi &amp; deploy ke compute engine" />
-    <option name="LAST_COMMIT_MESSAGE" value="revisi &amp; deploy ke compute engine" />
+    <MESSAGE value="move all files to Cloud_Computing folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="move all files to Cloud_Computing folder" />
   </component>
 </project>
