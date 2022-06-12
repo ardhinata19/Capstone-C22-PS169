@@ -2,8 +2,8 @@
 
 Cloud Computing design the architecture for Google Cloud and build an environment to store resources and provide servers to perform processes on google cloud services. We use the Compute Engine service to deploy backend services. Then we create a database with Posgresql using Cloud Sql services to integrate and control the input and output of processes on the server and create a Rest Api with the Hapi framework to simplify communication between the database and android to serve input and output data.
 
-##Architecture GCP
-![alternate text](./img/GCP%20arsitektur%20capstone.jpg)
+## Architecture GCP
+![alternate text](./image/GCP%20arsitektur%20capstone.jpg)
 
 ## Dependencies
 
@@ -34,7 +34,7 @@ Cloud Computing design the architecture for Google Cloud and build an environmen
 * Install all dependencies and deploy backend service
 * Testing backend service connection in Postman : [Documentation](https://blue-rocket-370020.postman.co/workspace/fitid-project~d7938928-6317-4e43-a6e5-a07d7c2de6b1/overview)
 
-##Contributors
+## Contributors
 
-####[Ardhi Nata](https://github.com/ardhinata19) -  (C2240F2150)
-####[Abhista Rizqi Ramadan](https://github.com/sibeha) - (C7009G0946)
+#### [Ardhi Nata](https://github.com/ardhinata19) -  (C2240F2150)
+#### [Abhista Rizqi Ramadan](https://github.com/sibeha) - (C7009G0946)
